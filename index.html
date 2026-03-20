@@ -1,0 +1,43 @@
+<!--Jackson Hinks - To-Do List Plus - 3/19/2026-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>To-Do List</h1>
+
+    <!-- Form -->
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter task..." required>
+        <input type="text" id="tagInput" placeholder="Tag (optional)">
+        <button type="submit">Add</button>
+    </form>
+
+    <p id="errorMsg"></p>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+
+        <select id="tagFilter">
+            <option value="all">All Tags</option>
+        </select>
+    </div>
+
+    <!-- Counter -->
+    <p id="counter"></p>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

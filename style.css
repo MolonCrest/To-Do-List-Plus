@@ -1,0 +1,39 @@
+/* Jackson Hinks - To-Do List Plus - 3/19/2026 */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    width: 400px;
+}
+
+input, button, select {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 8px;
+    background: #1e1e1e;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#errorMsg {
+    color: red;
+}
